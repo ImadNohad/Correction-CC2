@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input,
+button {
+	font-weight: 700;
+	color: hsl(249, 10%, 26%);
+	display: block;
+	width: 100%;
+	padding: 1rem 1.5rem;
+	margin-bottom: 0.25rem;
+	border-radius: 5px;
+	border: hsl(246, 25%, 77%) 1px solid;
+}
+
+input::placeholder {
+	color: hsl(249, 10%, 26%);
+	font-weight: 700;
+	opacity: 0.7;
+}
+
+body {
+	background: url("./images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-family: "Poppins";
+	color: white;
+	max-width: 1440px;
+	margin: auto;
+}
+
+.wrapper {
+	width: 75%;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.right form {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 3px 0px;
+}
+
+.right {
+	flex: 1;
+}
+
+.left {
+	flex: 1;
+	vertical-align: middle;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 3rem;
+	margin-bottom: 2rem;
+}
+
+.subtitle {
+	font-size: 0.89rem;
+}
+
+.heading {
+	background: hsl(248, 32%, 49%);
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.85rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 3px 0px;
+}
+
+#btnClaim {
+	background: hsl(154, 59%, 51%);
+	color: white;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px 0px;
+}
+
+#btnClaim:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.tos {
+	font-size: 0.65rem;
+	font-weight: 600;
+	color: hsl(246, 25%, 77%);
+	text-align: center;
+}
+
+.tos a {
+	color: hsl(0, 100%, 74%);
+	text-decoration: none;
+}
+
+.formControl {
+	margin-bottom: 1rem;
+}
+
+.formControl.error input {
+	background: url("./images/icon-error.svg") 95% 50% no-repeat;
+	border: hsl(0, 100%, 74%) 2px solid;
+	color: hsl(0, 100%, 74%);
+}
+
+.formControl.error input::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+.formControl small {
+	display: none;
+	float: right;
+	font-size: 0.6rem;
+	color: hsl(0, 100%, 74%);
+	font-style: italic;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.formControl.error small {
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		height: auto;
+		padding: 4rem 0rem;
+	}
+
+	.wrapper {
+		display: block;
+		width: 90%;
+	}
+
+	.right form {
+		padding: 1.5rem;
+	}
+
+	.left {
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 2rem;
+	}
+
+	.subtitle {
+		font-size: 1rem;
+	}
+}
