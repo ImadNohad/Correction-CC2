@@ -3,7 +3,6 @@ var lastname = document.getElementById("txtLastName");
 var email = document.getElementById("txtEmail");
 var password = document.getElementById("txtPassword");
 var form = document.getElementById("registerForm");
-var btnClaim = document.getElementById("btnClaim");
 
 form.addEventListener("submit", function (e) {
 	e.preventDefault();

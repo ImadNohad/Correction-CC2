@@ -63,7 +63,7 @@ body {
 .title {
 	font-size: 3rem;
 	font-weight: 700;
-	line-height: 3rem;
+	line-height: 3.5rem;
 	margin-bottom: 2rem;
 }
 
@@ -97,7 +97,8 @@ body {
 }
 
 .tos {
-	font-size: 0.65rem;
+	margin-top: 1rem;
+	font-size: 0.6rem;
 	font-weight: 600;
 	color: hsl(246, 25%, 77%);
 	text-align: center;
@@ -138,6 +139,7 @@ body {
 
 @media screen and (max-width: 768px) {
 	body {
+		background: url("./images/bg-intro-mobile.png") hsl(0, 100%, 74%);
 		height: auto;
 		padding: 4rem 0rem;
 	}
